@@ -1,3 +1,6 @@
+[env]
+LINKAMP_MUSIC_DIR = "{{env.HOME}}/Music"
+
 [tools]
 go = "1.27.1"
 "go:github.com/go-delve/delve/cmd/dlv" = "1.27.2"
