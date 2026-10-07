@@ -7,7 +7,8 @@
     }
   },
   "go.formatTool": "goimports",
-  "go.lintTool": "staticcheck",
-  "go.lintOnSave": "package",
-  "go.toolsManagement.autoUpdate": false
+  "go.toolsManagement.autoUpdate": false,
+  "gopls": {
+    "ui.diagnostic.staticcheck": true
+  }
 }

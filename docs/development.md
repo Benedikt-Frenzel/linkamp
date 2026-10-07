@@ -31,7 +31,7 @@ Install the workspace's recommended `golang.go` extension when VSCodium prompts,
 codium --install-extension golang.go
 ```
 
-The shared workspace settings enable formatting and import organization on save, run Staticcheck on the current package, and prevent the extension from independently updating tools managed by mise.
+The shared workspace settings enable formatting and import organization on save, enable Staticcheck diagnostics through gopls, and prevent the extension from independently updating tools managed by mise. The standalone mise-pinned `staticcheck` command remains available for explicit command-line and CI checks; configuring it as the client-side VSCodium linter as well would produce duplicate diagnostics.
 
 If VSCodium was launched from a desktop menu and cannot find Go or its tools, launch it with the repository's mise environment:
 
