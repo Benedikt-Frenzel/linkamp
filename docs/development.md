@@ -18,6 +18,7 @@ mise exec -- go version
 mise exec -- gopls version
 mise exec -- dlv version
 mise exec -- staticcheck -version
+mise exec -- govulncheck -version
 ```
 
 Do not update repo-wide tools with unpinned `go install ...@latest` commands. Update the relevant entry in `mise.toml` so every contributor receives the same version.
@@ -47,3 +48,4 @@ Personal interface preferences should remain in VSCodium's user settings rather 
 - **goimports** formats Go and maintains imports.
 - **Delve (`dlv`)** provides source-level debugging.
 - **Staticcheck** finds correctness and maintainability problems beyond the compiler.
+- **govulncheck** reports known vulnerabilities that affect the Go code and its dependencies.
