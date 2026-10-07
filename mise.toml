@@ -1,2 +1,6 @@
 [tools]
 go = "1.27.1"
+"go:github.com/go-delve/delve/cmd/dlv" = "1.27.2"
+"go:golang.org/x/tools/cmd/goimports" = "0.51.0"
+"go:golang.org/x/tools/gopls" = "0.23.0"
+staticcheck = "2026.2.1"
